@@ -30,7 +30,7 @@ function randInt(min, max) {
 
 //Part 1
 
-//ask console to_fahrenheit(37)
+//ask console to_fahrenheit(value you want celsius to be)
 function to_fahrenheit(celsius) {
     //+(Math.round makes it so it rounds to closest whole number
     //Math.floor would round down, and Math.ciel would round up no matter what
@@ -69,7 +69,25 @@ function cylinder_volume(radius, height) {
 function percent(score, total) {
     let test_score = score / total;
     let test_score_percent = +(Math.round(test_score * 100));
-    console.log (`${test_score_percent}%`);
+    console.log(`${test_score_percent}%`);
     return test_score;
 }
 
+function pythagorean_theorem(a, b) {
+    // dont need to put a^2 into brackets, but can
+    let pyth_theory = Math.sqrt((a ** 2) + (b ** 2));
+    return pyth_theory;
+}
+
+//Math.round(Math.PI) == 3, pi should be 3.14
+// round(Math.PI, 2)
+function round(value, decimals) {
+    // read from right ot left
+    // take 10, put to ^decimal value, mulitply that by value and make it the new value
+    value = value * 10 ** decimals;
+    //rounds the value which is a decimal
+    value = Math.round(value);
+    // moves to proper decimal place
+    value = value / 10 ** decimals;
+    return value;
+}
