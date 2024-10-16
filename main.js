@@ -57,3 +57,19 @@ function area_circle(radius) {
     return a_c;
 }
 
+//Part 5
+
+function cylinder_volume(radius, height) {
+    let c_v = +(area_circle(radius) * height);
+    return c_v;
+}
+
+//Part 6
+
+function percent(score, total) {
+    let test_score = score / total;
+    let test_score_percent = +(Math.round(test_score * 100));
+    console.log (`${test_score_percent}%`);
+    return test_score;
+}
+
